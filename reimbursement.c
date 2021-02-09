@@ -1,6 +1,10 @@
 #include <stdio.h>
 #define REIMBURSEMENT_RATE 0.35
 
+/*
+ * This program calculates the reimbursement rate for fuel costs
+ * at $0.35/mile driven. 
+ */
 int main(){
 
     float odo_final, odo_initial, miles_traveled;
@@ -13,7 +17,7 @@ int main(){
     scanf("%f", &odo_final);
 
     miles_traveled = odo_final - odo_initial;
-    if (miles_traveled < 0){
+    if (miles_traveled < 0){                            // user input error
         printf("Invalid input\n");
         return 0;
     }
