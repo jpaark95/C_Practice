@@ -28,13 +28,13 @@ int main() {
                 if (emission_rate <= permitted_emission_rate)
                     flag_passed = 1;
                 else
-                    flag_passed = -1;
+                    flag_passed = 0;
             } else { //second 50,000 miles
                 permitted_emission_rate = 4.2;
                 if (emission_rate <= permitted_emission_rate)
                     flag_passed = 1;
                 else
-                    flag_passed = -1;
+                    flag_passed = 0;
             }
             break;
         case CHx:
@@ -43,13 +43,13 @@ int main() {
                 if (emission_rate <= permitted_emission_rate)
                     flag_passed = 1;
                 else
-                    flag_passed = -1;
+                    flag_passed = 0;
             } else { //second 50,000 miles
                 permitted_emission_rate = 0.39;
                 if (emission_rate <= permitted_emission_rate)
                     flag_passed = 1;
                 else
-                    flag_passed = -1;
+                    flag_passed = 0;
             }
             break;
         case NOx:
@@ -58,13 +58,13 @@ int main() {
                 if (emission_rate <= permitted_emission_rate)
                     flag_passed = 1;
                 else
-                    flag_passed = -1;
+                    flag_passed = 0;
             } else { //second 50,000 miles
                 permitted_emission_rate = 0.5;
                 if (emission_rate <= permitted_emission_rate)
                     flag_passed = 1;
                 else
-                    flag_passed = -1;
+                    flag_passed = 0;
             }
             break;
         case NMHC:
@@ -73,13 +73,13 @@ int main() {
                 if (emission_rate <= permitted_emission_rate)
                     flag_passed = 1;
                 else
-                    flag_passed = -1;
+                    flag_passed = 0;
             } else { //second 50,000 miles
                 permitted_emission_rate = 0.31;
                 if (emission_rate <= permitted_emission_rate)
                     flag_passed = 1;
                 else
-                    flag_passed = -1;
+                    flag_passed = 0;
             }
             break;
     }
