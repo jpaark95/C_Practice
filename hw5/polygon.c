@@ -35,6 +35,7 @@ double polygon_area(double *arr_x, double* arr_y, int arr_size){
     area = fabs(area) / 2.0;
     return area;
 }
+
 int main(int argc, char* argv[]) {
     FILE *infp = fopen(argv[1], "r");
     FILE *outfp = fopen(argv[2], "w");
